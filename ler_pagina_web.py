@@ -22,10 +22,11 @@ arq.close()
 url2 = requests.get("https://twitter.com/_Astor_333")
 
 arq2= open("arq_2.txt",'w')
-arq2.write(str(url.text))
+arq2.write(str(url2.text))
 arq2.close()
 
-## Ambas as chamadas das funções possuem o mesmo resultado 
+## Ambas as chamadas das funções possuem o mesmo resultado prático
+## mas a uma pequena alteração que aparentemente seria o "para identificar cada chamada"
 
 # ao passar a url para pelo get para uma variavel esta se torna um objeto 
 #cujo a codificação é em UTF-8
